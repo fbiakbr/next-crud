@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { BiUserPlus } from 'react-icons/bi'
 import Table from '../components/table'
+import Form from '../components/form'
 
 export default function Home() {
   return (
@@ -19,6 +20,9 @@ export default function Home() {
               Add Employee <span className='px-1'><BiUserPlus size={23} /></span>
             </button>
           </div>
+        </div>
+        <div className='container mx-auto py-5'>
+          <Form />
         </div>
         <div className='container mx-auto'>
           <Table />
