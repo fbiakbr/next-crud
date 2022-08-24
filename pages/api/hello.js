@@ -1,8 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
 import connectMongo from "../../database/conn"
-
+import data from "../../database/data.json"
 export default function handler(req, res) {
   connectMongo()
-  res.status(200).json({ name: 'John Doe' })
+  res.status(200).json({ data})
 }
